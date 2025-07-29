@@ -65,6 +65,12 @@ target_sources(LoudnessCompensator
         Source/DSP/ISO226Data.h
 )
 
+# Include directories
+target_include_directories(LoudnessCompensator
+    PRIVATE
+        Source
+)
+
 # Compiler definitions
 target_compile_definitions(LoudnessCompensator
     PUBLIC

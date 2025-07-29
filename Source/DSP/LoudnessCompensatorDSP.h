@@ -9,7 +9,8 @@
 
 #pragma once
 
-#include <JuceHeader.h>
+#include <juce_core/juce_core.h>
+#include <juce_dsp/juce_dsp.h>
 #include <vector>
 #include <complex>
 #include <map>

@@ -1,0 +1,34 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2024 LoudnessCompensator Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Additional Terms:
+This project uses the JUCE framework, which is dual-licensed under the AGPLv3
+and a commercial license. This project is distributed under AGPLv3 to comply
+with JUCE's open source licensing requirements.
+
+For the full text of the GNU Affero General Public License v3.0, please visit:
+https://www.gnu.org/licenses/agpl-3.0.html
+
+JUCE Framework License Information:
+The JUCE Framework modules are dual-licensed under the AGPLv3 and the commercial
+JUCE licence. This project uses JUCE under the AGPLv3 license terms.
+For more information about JUCE licensing, visit: https://juce.com/get-juce/
+
+Source Code Availability:
+As required by the AGPLv3 license, the complete source code for this project
+is available at: https://github.com/grisys83/LoudnessCompensator

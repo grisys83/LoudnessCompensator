@@ -82,7 +82,7 @@ Filter design uses the same **firwin2** windowing approach as SciPy/MATLAB imple
 
 - **GitHub Release**: https://github.com/grisys83/LoudnessCompensator/releases/tag/v1.0.0
 - **Full Source Code**: https://github.com/grisys83/LoudnessCompensator
-- **License**: MIT (completely free, modify as needed)
+- **License**: AGPLv3 (open source, JUCE framework requirement)
 - **Documentation**: Comprehensive README with technical details
 
 ### Installation

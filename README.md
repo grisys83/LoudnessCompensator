@@ -2,7 +2,7 @@
 
 A perceptual loudness compensation AU/VST3 plugin based on ISO 226:2003 equal-loudness contours (JUCE version)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Platform: macOS/Windows](https://img.shields.io/badge/Platform-macOS%2FWindows-blue.svg)](https://juce.com/)
 [![Format: AU/VST3](https://img.shields.io/badge/Format-AU%2FVST3-green.svg)](https://juce.com/)
 
@@ -191,7 +191,21 @@ This plugin represents a precise port of the WebTidalLoudness core DSP engine to
 
 ## License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPLv3)** - see the [LICENSE](LICENSE) file for details.
+
+### Why AGPLv3?
+
+This project uses the [JUCE framework](https://juce.com/), which is dual-licensed under AGPLv3 and a commercial license. To provide this plugin as free and open source software, we use JUCE under its AGPLv3 license terms, which requires this project to also be licensed under AGPLv3.
+
+### License Summary
+
+- ✅ **Free to use** for personal and commercial purposes
+- ✅ **Source code available** - Complete source code is provided
+- ✅ **Modify and distribute** - You can modify and redistribute the code
+- ⚠️ **Copyleft requirement** - Derivative works must also be open source under AGPLv3
+- ⚠️ **Network service clause** - If you run this as a network service, you must provide source code to users
+
+For more information about AGPLv3, visit: https://www.gnu.org/licenses/agpl-3.0.html
 
 ## Contributing
 

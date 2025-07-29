@@ -194,6 +194,7 @@ To remove the plugin:
 **Architecture**: x64 only (32-bit Windows not supported)
 **Dependencies**: Microsoft Visual C++ Runtime
 **Digital Signature**: Code-signed for Windows security
+**License**: AGPLv3 (open source, JUCE framework requirement)
 **Compatibility**: VST3 SDK 3.7+ compatible DAWs
 
 ---

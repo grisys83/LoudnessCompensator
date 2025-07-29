@@ -5,6 +5,9 @@ A perceptual loudness compensation AU/VST3 plugin based on ISO 226:2003 equal-lo
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Platform: Cross-Platform](https://img.shields.io/badge/Platform-macOS%2FWindows%2FLinux-blue.svg)](https://juce.com/)
 [![Format: AU/VST3/LV2](https://img.shields.io/badge/Format-AU%2FVST3%2FLV2-green.svg)](https://juce.com/)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Yes-brightgreen.svg)](https://github.com/grisys83/LoudnessCompensator)
+
+> **📄 License**: This project is licensed under **AGPLv3** - free and open source software. See [License](#license) section below for details.
 
 ## Overview
 

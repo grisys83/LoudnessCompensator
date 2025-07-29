@@ -3,7 +3,7 @@
 A perceptual loudness compensation AU/VST3 plugin based on ISO 226:2003 equal-loudness contours (JUCE version)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-blue.svg)](https://www.apple.com/macos/)
+[![Platform: macOS/Windows](https://img.shields.io/badge/Platform-macOS%2FWindows-blue.svg)](https://juce.com/)
 [![Format: AU/VST3](https://img.shields.io/badge/Format-AU%2FVST3-green.svg)](https://juce.com/)
 
 ## Overview
@@ -22,20 +22,40 @@ The Loudness Compensator plugin provides perceptual loudness compensation based 
 
 ## Installation
 
-### Requirements
+### System Requirements
 
+#### macOS
 - **macOS**: 10.13 or later
-- **Xcode**: 12 or later (for building from source)
-- **JUCE**: 7.0 or later (included in parent directory)
+- **Architecture**: Universal Binary (Intel + Apple Silicon)
 - **DAW**: Logic Pro, Ableton Live, Reaper, Pro Tools, or any AU/VST3 compatible host
+
+#### Windows
+- **Windows**: 10 or later (64-bit)
+- **Architecture**: x64
+- **DAW**: Reaper, Cubase, Studio One, FL Studio, or any VST3 compatible host
+
+#### Development Requirements
+- **Xcode**: 12 or later (macOS builds)
+- **Visual Studio**: 2019 or later (Windows builds)
+- **JUCE**: 7.0 or later (included in parent directory)
 
 ### Pre-built Binaries
 
-Download the latest release from the [Releases](https://github.com/grisys83/LoudnessCompensator/releases) page and install:
+Download the latest release from the [Releases](https://github.com/grisys83/LoudnessCompensator/releases) page:
 
+#### macOS Installation
 1. **AU Plugin**: Copy `LoudnessCompensator.component` to `~/Library/Audio/Plug-Ins/Components/`
 2. **VST3 Plugin**: Copy `LoudnessCompensator.vst3` to `~/Library/Audio/Plug-Ins/VST3/`
 3. Restart your DAW and rescan plugins
+
+#### Windows Installation
+1. Download the Windows release package
+2. **VST3 Plugin**: Copy `LoudnessCompensator.vst3` to one of these locations:
+   - `C:\Program Files\Common Files\VST3\` (system-wide)
+   - `C:\Users\[Username]\AppData\Roaming\VST3\` (user-specific)
+3. Restart your DAW and rescan VST3 plugins
+
+**Note**: The VST3 format is cross-platform compatible. The same VST3 plugin file can work on both macOS and Windows with proper compilation.
 
 ### Building from Source
 

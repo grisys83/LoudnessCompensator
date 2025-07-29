@@ -1,0 +1,19 @@
+Target dependency graph (7 targets)
+Target 'LoudnessCompensator - All' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - VST3' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - AAX' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - AU' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - AUv3 AppExtension' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - VST3 Manifest Helper' in project 'LoudnessCompensator'
+Target 'LoudnessCompensator - AUv3 AppExtension' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator'
+Target 'LoudnessCompensator - AU' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator'
+Target 'LoudnessCompensator - AAX' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator'
+Target 'LoudnessCompensator - VST3' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator'
+➜ Explicit dependency on target 'LoudnessCompensator - VST3 Manifest Helper' in project 'LoudnessCompensator'
+Target 'LoudnessCompensator - VST3 Manifest Helper' in project 'LoudnessCompensator' (no dependencies)
+Target 'LoudnessCompensator - Shared Code' in project 'LoudnessCompensator' (no dependencies)

@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCEPlugin/JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCEPlugin/JuceLibraryCode/AppConfig.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCEPlugin/JuceLibraryCode/JucePluginDefines.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_core/system/juce_TargetPlatform.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_core/system/juce_CompilerWarnings.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUBase.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUBuffer.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUUtility.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUInputElement.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUScopeElement.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/ComponentBase.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUMIDIUtility.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUOutputElement.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUPlugInDispatch.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUBuffer.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUBufferAllocator.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUEffectBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUEffectBase.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUSilentTimeout.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUInputElement.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUMIDIBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUMIDIBase.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUMIDIEffectBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUMIDIEffectBase.h \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUOutputElement.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUPlugInDispatch.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/AUScopeElement.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/ComponentBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/MusicDeviceBase.cpp \
+  /Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCE/modules/juce_audio_plugin_client/AU/AudioUnitSDK/MusicDeviceBase.h

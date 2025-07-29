@@ -1,0 +1,62 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847ce90443ddd7195666b913965c8b09b4c"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847099806d48beb7aba3e81db5a59287eae"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847499f4f05b5bf05bdf597c5b124ff776b"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847cf2ba67ce32f14529377d0f949d73c16"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847273ed2658e46873be3bd8d6f84f001fa"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847fefb829a0afe12d0db99ba97ded76c35"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd8476032aff738b740ba4bacb9af3fd569c4"
+    },
+    {
+      "guid" : "d95316f68e59891a7f2c4ab4d36cd847ce90443ddd7195666b913965c8b09b4c"
+    }
+  ],
+  "containerPath" : "/Users/parkbyeongsu/Hyang/WebTidalLoudness/JUCEPlugin/Builds/MacOSX/LoudnessCompensator.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "ARCHS" : "arm64 x86_64",
+          "ONLY_ACTIVE_ARCH" : "NO"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

@@ -31,7 +31,8 @@ This plugin applies **real-time inverse compensation** using the ISO 226:2003 eq
 
 ### Supported Formats
 - **AU** (Audio Unit) - Native macOS integration
-- **VST3** - Cross-platform standard (macOS + Windows)
+- **VST3** - Cross-platform standard (macOS + Windows + Linux)
+- **LV2** - Native Linux plugin format
 - **AUv3** - iOS/macOS app extension format
 
 ## Key Features
@@ -104,7 +105,17 @@ Filter design uses the same **firwin2** windowing approach as SciPy/MATLAB imple
 3. Restart your DAW and rescan VST3 plugins
 ```
 
-**Note**: VST3 format is cross-platform. Windows version works with Reaper, Cubase, Studio One, FL Studio, Pro Tools 2021.6+, and other VST3-compatible DAWs.
+#### Linux
+```
+1. Download LoudnessCompensator-v1.0.0-Linux.tar.gz
+2. Extract and install:
+   - LoudnessCompensator.vst3 → ~/.vst3/
+   - LoudnessCompensator.lv2/ → ~/.lv2/
+   - LoudnessCompensator (standalone) → ~/.local/bin/
+3. Restart your DAW and rescan plugins
+```
+
+**Note**: VST3 is cross-platform, LV2 is Linux-native. Works with Reaper, Ardour, Qtractor, Bitwig Studio, and other compatible hosts.
 
 ## Discussion Points
 
@@ -114,17 +125,17 @@ I'm particularly interested in community feedback on:
 2. **Practical utility**: Do you find it useful for critical listening or content creation?
 3. **Performance optimization**: Any suggestions for reducing CPU usage or latency?
 4. **Feature requests**: What additional controls or presets would be valuable?
-5. **Linux expansion**: Interest in Linux versions? (Windows now supported via VST3)
+5. **Platform feedback**: How well does it work across macOS/Windows/Linux platforms?
 
 ## Future Development
 
 Planned improvements based on community input:
-- **Linux version** (Windows now available, JUCE makes Linux straightforward)
 - **Additional filter algorithms** (IIR options for lower latency)
 - **Custom curve loading** (import your own equal-loudness data)
 - **Real-time analyzer integration** (visual feedback of compensation)
 - **Measurement integration** (calibration with SPL meters)
-- **Windows performance optimization** (DirectSound/WASAPI specific improvements)
+- **Platform-specific optimizations** (WASAPI/JACK/CoreAudio improvements)
+- **Mobile versions** (iOS/Android with AUv3/AAP support)
 
 ## Acknowledgments
 

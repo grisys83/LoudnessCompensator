@@ -3,8 +3,8 @@
 A perceptual loudness compensation AU/VST3 plugin based on ISO 226:2003 equal-loudness contours (JUCE version)
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
-[![Platform: macOS/Windows](https://img.shields.io/badge/Platform-macOS%2FWindows-blue.svg)](https://juce.com/)
-[![Format: AU/VST3](https://img.shields.io/badge/Format-AU%2FVST3-green.svg)](https://juce.com/)
+[![Platform: Cross-Platform](https://img.shields.io/badge/Platform-macOS%2FWindows%2FLinux-blue.svg)](https://juce.com/)
+[![Format: AU/VST3/LV2](https://img.shields.io/badge/Format-AU%2FVST3%2FLV2-green.svg)](https://juce.com/)
 
 ## Overview
 
@@ -34,9 +34,17 @@ The Loudness Compensator plugin provides perceptual loudness compensation based 
 - **Architecture**: x64
 - **DAW**: Reaper, Cubase, Studio One, FL Studio, or any VST3 compatible host
 
+#### Linux
+- **Linux**: Ubuntu 20.04+, Fedora 35+, Arch Linux, or equivalent
+- **Architecture**: x86_64
+- **DAW**: Reaper, Ardour, Qtractor, Bitwig Studio, or any VST3/LV2 compatible host
+- **Audio**: ALSA, JACK, or PulseAudio
+
 #### Development Requirements
 - **Xcode**: 12 or later (macOS builds)
-- **Visual Studio**: 2019 or later (Windows builds)
+- **Visual Studio**: 2019 or later (Windows builds)  
+- **GCC/Clang**: 7.0+ or Clang 6.0+ (Linux builds)
+- **CMake**: 3.22 or later (Linux builds)
 - **JUCE**: 7.0 or later (included in parent directory)
 
 ### Pre-built Binaries
@@ -55,7 +63,16 @@ Download the latest release from the [Releases](https://github.com/grisys83/Loud
    - `C:\Users\[Username]\AppData\Roaming\VST3\` (user-specific)
 3. Restart your DAW and rescan VST3 plugins
 
-**Note**: The VST3 format is cross-platform compatible. The same VST3 plugin file can work on both macOS and Windows with proper compilation.
+#### Linux Installation
+1. Download the Linux release package
+2. **VST3 Plugin**: Copy `LoudnessCompensator.vst3` to `~/.vst3/`
+3. **LV2 Plugin**: Copy `LoudnessCompensator.lv2/` to `~/.lv2/`
+4. **Standalone**: Copy `LoudnessCompensator` to `~/.local/bin/`
+5. Restart your DAW and rescan plugins
+
+**Detailed Linux Guide**: See [LINUX_INSTALL.md](LINUX_INSTALL.md) for complete setup instructions.
+
+**Note**: VST3 format is cross-platform compatible. LV2 is the native Linux plugin format with excellent integration.
 
 ### Building from Source
 
@@ -67,10 +84,13 @@ cd LoudnessCompensator
 # Build using the provided script
 ./build_juce.sh
 
-# Or use Projucer
+# macOS: Use Projucer
 # 1. Open LoudnessCompensator.jucer in Projucer
 # 2. Click "Save and Open in IDE"
 # 3. Build in Xcode (Cmd+B)
+
+# Linux: Use CMake
+./build_linux.sh Release
 ```
 
 ## Usage

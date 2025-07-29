@@ -177,35 +177,39 @@ find . -name "*.so" -o -name "LoudnessCompensator_*" | while read -r file; do
     fi
 done
 
-# Optional: Install plugins
-read -p "Install plugins to user directories? [y/N]: " -n 1 -r
-echo ""
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-    print_status "Installing plugins..."
-    
-    # Create plugin directories
-    mkdir -p "$HOME/.vst3"
-    mkdir -p "$HOME/.lv2"
-    
-    # Copy VST3
-    if [ -d "LoudnessCompensator_artefacts/VST3" ]; then
-        cp -r LoudnessCompensator_artefacts/VST3/* "$HOME/.vst3/"
-        print_success "VST3 installed to ~/.vst3/"
+# Optional: Install plugins (skip in CI environment)
+if [ -z "$CI" ] && [ -z "$GITHUB_ACTIONS" ]; then
+    read -p "Install plugins to user directories? [y/N]: " -n 1 -r
+    echo ""
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        print_status "Installing plugins..."
+        
+        # Create plugin directories
+        mkdir -p "$HOME/.vst3"
+        mkdir -p "$HOME/.lv2"
+        
+        # Copy VST3
+        if [ -d "LoudnessCompensator_artefacts/VST3" ]; then
+            cp -r LoudnessCompensator_artefacts/VST3/* "$HOME/.vst3/"
+            print_success "VST3 installed to ~/.vst3/"
+        fi
+        
+        # Copy LV2
+        if [ -d "LoudnessCompensator_artefacts/LV2" ]; then
+            cp -r LoudnessCompensator_artefacts/LV2/* "$HOME/.lv2/"
+            print_success "LV2 installed to ~/.lv2/"
+        fi
+        
+        # Copy Standalone
+        if [ -f "LoudnessCompensator_artefacts/Standalone/LoudnessCompensator" ]; then
+            mkdir -p "$HOME/.local/bin"
+            cp "LoudnessCompensator_artefacts/Standalone/LoudnessCompensator" "$HOME/.local/bin/"
+            chmod +x "$HOME/.local/bin/LoudnessCompensator"
+            print_success "Standalone app installed to ~/.local/bin/LoudnessCompensator"
+        fi
     fi
-    
-    # Copy LV2
-    if [ -d "LoudnessCompensator_artefacts/LV2" ]; then
-        cp -r LoudnessCompensator_artefacts/LV2/* "$HOME/.lv2/"
-        print_success "LV2 installed to ~/.lv2/"
-    fi
-    
-    # Copy Standalone
-    if [ -f "LoudnessCompensator_artefacts/Standalone/LoudnessCompensator" ]; then
-        mkdir -p "$HOME/.local/bin"
-        cp "LoudnessCompensator_artefacts/Standalone/LoudnessCompensator" "$HOME/.local/bin/"
-        chmod +x "$HOME/.local/bin/LoudnessCompensator"
-        print_success "Standalone app installed to ~/.local/bin/LoudnessCompensator"
-    fi
+else
+    print_status "Skipping installation (CI environment detected)"
 fi
 
 echo ""

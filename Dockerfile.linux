@@ -1,0 +1,65 @@
+# Linux Build Environment for LoudnessCompensator
+FROM ubuntu:22.04
+
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=UTC
+
+# Install build dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    git \
+    pkg-config \
+    curl \
+    wget \
+    # Audio libraries
+    libasound2-dev \
+    libjack-jackd2-dev \
+    # GUI libraries
+    libfreetype-dev \
+    libfontconfig1-dev \
+    libx11-dev \
+    libxext-dev \
+    libxinerama-dev \
+    libxrandr-dev \
+    libxcursor-dev \
+    libxcomposite-dev \
+    libxrender-dev \
+    # OpenGL
+    libglu1-mesa-dev \
+    mesa-common-dev \
+    # Optional
+    libcurl4-openssl-dev \
+    libwebkit2gtk-4.1-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /workspace
+
+# Clone JUCE framework
+RUN git clone --depth 1 --branch 7.0.12 https://github.com/juce-framework/JUCE.git /workspace/JUCE
+
+# Copy project files
+COPY . /workspace/LoudnessCompensator/
+
+# Set working directory to project
+WORKDIR /workspace/LoudnessCompensator
+
+# Make build script executable
+RUN chmod +x build_linux.sh
+
+# Build the plugin
+RUN ./build_linux.sh Release
+
+# Create output directory and copy artifacts
+RUN mkdir -p /output && \
+    if [ -d "cmake-build-linux/LoudnessCompensator_artefacts" ]; then \
+        cp -r cmake-build-linux/LoudnessCompensator_artefacts/* /output/; \
+    fi
+
+# Set output as volume
+VOLUME ["/output"]
+
+# Default command
+CMD ["ls", "-la", "/output"]

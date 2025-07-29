@@ -26,8 +26,8 @@ juce_add_plugin(LoudnessCompensator
     PLUGIN_MANUFACTURER_CODE "Hyang"
     PLUGIN_CODE "LdCs"
     
-    # Plugin formats
-    FORMATS VST3 Standalone LV2
+    # Plugin formats (conditional based on platform)
+    FORMATS VST3 Standalone $<$<PLATFORM_ID:Linux>:LV2>
     
     # Plugin properties
     PRODUCT_NAME "Loudness Compensator"
@@ -49,7 +49,8 @@ juce_add_plugin(LoudnessCompensator
     
     # Plugin categories
     VST3_CATEGORIES "Fx" "EQ"
-    LV2_CATEGORIES "EQPlugin"
+    $<$<PLATFORM_ID:Linux>:LV2_URI "http://hyang.audio/plugins/LoudnessCompensator">
+    $<$<PLATFORM_ID:Linux>:LV2_CATEGORIES "EQPlugin">
 )
 
 # Source files
